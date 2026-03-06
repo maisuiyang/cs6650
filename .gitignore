@@ -1,0 +1,5 @@
+# Ignore everything in repo root except HW1 and HW2
+/*
+!/.gitignore
+!/HW1/
+!/HW2/

@@ -1,0 +1,88 @@
+===== WARMUP START =====
+===== WARMUP RESULT =====
+Success: 32000
+Failed: 0
+Retries: 0
+Wall time (s): 3.818
+Throughput (msg/s): 8381.351492928234
+Connections: 636
+Reconnections: 636
+CSV saved to: results/WARMUP-latency.csv
+Latency count: 32000
+mean(ms): 193
+median(ms): 182
+p50(ms): 182
+p95(ms): 483
+p99(ms): 617
+min(ms): 0
+max(ms): 753
+Throughput per room (msg/s):
+room 1: 423.7820848611839
+room 2: 426.4012572027239
+room 3: 420.6390780513358
+room 4: 423.7820848611839
+room 5: 431.3776846516501
+room 6: 405.97171293871133
+room 7: 417.4960712414877
+room 8: 415.66265060240966
+room 9: 402.56678889470925
+room 10: 436.8779465688842
+room 11: 425.8774227344159
+room 12: 413.56731272917756
+room 13: 409.6385542168675
+room 14: 428.234677841802
+room 15: 422.21058145625983
+room 16: 413.56731272917756
+room 17: 414.8768988999476
+room 18: 405.97171293871133
+room 19: 438.1875327396543
+room 20: 404.66212676794134
+Message type distribution:
+JOIN: 1653
+LEAVE: 1607
+TEXT: 28740
+===== WARMUP END =====
+===== MAIN START =====
+===== MAIN RESULT =====
+Success: 500000
+Failed: 0
+Retries: 0
+Wall time (s): 10.526
+Throughput (msg/s): 47501.42504275128
+Connections: 1280
+Reconnections: 1280
+CSV saved to: results/MAIN-latency.csv
+Latency count: 500000
+mean(ms): 277
+median(ms): 187
+p50(ms): 187
+p95(ms): 815
+p99(ms): 1157
+min(ms): 0
+max(ms): 1934
+Throughput per room (msg/s):
+room 1: 2391.0317309519287
+room 2: 2351.2255367661032
+room 3: 2379.1563746912407
+room 4: 2346.475394261828
+room 5: 2365.380961428843
+room 6: 2372.221166634999
+room 7: 2361.770853125594
+room 8: 2384.3815314459434
+room 9: 2342.9602888086642
+room 10: 2385.3315599467983
+room 11: 2398.3469504085124
+room 12: 2373.5512065361963
+room 13: 2384.476534296029
+room 14: 2377.5413262397874
+room 15: 2368.5160554816644
+room 16: 2381.5314459433785
+room 17: 2391.696750902527
+room 18: 2369.4660839825196
+room 19: 2374.976249287479
+room 20: 2401.3870416112486
+Message type distribution:
+JOIN: 24938
+LEAVE: 24974
+TEXT: 450088
+===== MAIN END =====

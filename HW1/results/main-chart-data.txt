@@ -1,0 +1,3 @@
+# Throughput Chart Data
+# Time(s), Throughput(msg/s)
+0.0, 50000.0
