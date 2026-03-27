@@ -1,0 +1,1 @@
+PostgreSQL DDL is in `schema.sql`. Existing databases that already created the old `idx_messages_sent` (without `INCLUDE`) should run `upgrade-messages-sent-index.sql` once. Datasource settings live in `server-v3` and `consumer-v3` `application.properties`.

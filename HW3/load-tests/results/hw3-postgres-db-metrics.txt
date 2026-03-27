@@ -1,0 +1,32 @@
+          captured_at          
+-------------------------------
+ 2026-03-27 13:36:43.069068-07
+(1 row)
+
+ messages_total 
+----------------
+        4555415
+(1 row)
+
+ schemaname |      relname       | est_rows 
+------------+--------------------+----------
+ public     | messages           |  4539654
+ public     | user_room_activity |  1792750
+ public     | analytics_minute   |       34
+(3 rows)
+
+   datname   | active_connections 
+-------------+--------------------
+ cs6650_chat |                 21
+(1 row)
+
+ total_backends 
+----------------
+             21
+(1 row)
+
+  buffer_hit_ratio   
+---------------------
+ 91.8929425593956712
+(1 row)
+
