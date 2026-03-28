@@ -1,6 +1,10 @@
 package com.example.client.model;
 
 public class OutboundMessage {
+
+  /** Sentinel: workers exit when received (one per worker after generation completes). */
+  public static final OutboundMessage POISON = new OutboundMessage(-1, -1, "POISON", "");
+
   public final long id;
   public final int roomId;
   public final String messageType;

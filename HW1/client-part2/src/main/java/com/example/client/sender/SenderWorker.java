@@ -37,13 +37,13 @@ public class SenderWorker implements Runnable {
     while (true) {
       OutboundMessage msg;
       try {
-        msg = queue.poll(2, TimeUnit.SECONDS);
+        msg = queue.take();
       } catch (InterruptedException e) {
         Thread.currentThread().interrupt();
         break;
       }
 
-      if (msg == null) {
+      if (msg == OutboundMessage.POISON) {
         break;
       }
 
@@ -91,6 +91,7 @@ public class SenderWorker implements Runnable {
         }
         tracker.markSend(msg.id, System.nanoTime());
         client.send(msg.json);
+        metrics.recordSend(System.currentTimeMillis(), msg.roomId, msg.messageType);
         return true;
       } catch (Exception e) {
         if (attempt < 5) {

@@ -1,5 +1,6 @@
-# Ignore everything in repo root except HW1 and HW2
+# Ignore everything in repo root except HW1, HW2, HW3
 /*
 !/.gitignore
 !/HW1/
 !/HW2/
+!/HW3/
